@@ -1,4 +1,5 @@
 import "./globals.css";
+import { LanguageProvider } from "@/lib/LanguageContext";
 
 export const metadata = {
   title: "InfiniTech Coding Bootcamp | Tashkent",
@@ -12,8 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">
-        {children}
+      <body className="bg-black text-white antialiased">
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

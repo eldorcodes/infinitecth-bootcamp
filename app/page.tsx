@@ -1,15 +1,21 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Roadmap from "@/components/Roadmap";
 import Pricing from "@/components/Pricing";
-import CTA from "@/components/CTA";
+import Apply from "@/components/Apply";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Roadmap />
-      <Pricing />
-      <CTA />
+      <Header />
+      <main className="pt-24">
+        <Hero />
+        <Roadmap />
+        <Pricing />
+        <Apply />
+      </main>
+      <Footer />
     </>
   );
 }
