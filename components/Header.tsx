@@ -11,13 +11,13 @@ export default function Header() {
         {/* Logo + Brand */}
         <div className="flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/splash-icon.png"
             alt="InfiniTech Coding Bootcamp"
             width={36}
             height={36}
             priority
           />
-          <span className="text-lg font-bold tracking-wide">
+          <span style={{color:"white"}} className="text-lg font-bold tracking-wide">
             InfiniTech
           </span>
         </div>

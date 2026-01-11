@@ -2,6 +2,11 @@
 
 import { useLanguage } from "@/lib/LanguageContext";
 
+const FORM_LINKS = {
+  en: "https://forms.gle/D8oQcgGp2aPMr3aQ9",
+  uz: "https://forms.gle/bLY1y2rniiwgAsS9A",
+};
+
 export default function Apply() {
   const { lang } = useLanguage();
 
@@ -19,13 +24,13 @@ export default function Apply() {
 
         <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
           {lang === "en"
-            ? "Join our free intro workshop to see if InfiniTech is right for you. Applications are limited."
-            : "Bepul tanishtiruv darsiga qo‘shiling va InfiniTech sizga mos kelishini bilib oling. Joylar cheklangan."}
+            ? "Join our free intro workshop to see if InfiniTech is right for you."
+            : "Bepul tanishtiruv darsiga qo‘shiling va InfiniTech sizga mos kelishini bilib oling."}
         </p>
 
         <div className="mt-10">
           <a
-            href="https://forms.gle/YOUR_FORM_LINK"
+            href={FORM_LINKS[lang]}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-black px-10 py-4 rounded-xl text-lg font-semibold hover:bg-gray-200 transition"

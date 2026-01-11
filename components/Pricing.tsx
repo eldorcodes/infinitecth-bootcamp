@@ -28,7 +28,7 @@ const content = {
       price: "2,500,000 UZS / month",
       items: [
         "1-on-1 mentoring",
-        "Apps under MHCJ",
+        "Apps under MCHJ",
         "Business & scaling",
       ],
     },
@@ -59,7 +59,7 @@ const content = {
       price: "2,500,000 UZS / oy",
       items: [
         "1-ga-1 mentorlik",
-        "MHCJ ostida ilovalar",
+        "MCHJ ostida ilovalar",
         "Biznes va kengaytirish",
       ],
     },
