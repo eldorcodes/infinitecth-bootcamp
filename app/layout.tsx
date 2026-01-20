@@ -2,8 +2,9 @@ import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
 export const metadata = {
-  title: "InfiniTech Coding Bootcamp | Tashkent",
-  description: "Build apps. Get hired. Earn money.",
+  title: "InfiniTech Startup Academy | Toshkent",
+  description:
+    "Mobil ilovalar yaratish, ularni App Store va Google Play’ga joylash hamda monetizatsiya qilishni o‘rgatuvchi startup akademiya.",
 };
 
 export default function RootLayout({
@@ -12,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="uz">
       <body className="bg-black text-white antialiased">
         <LanguageProvider>{children}</LanguageProvider>
       </body>

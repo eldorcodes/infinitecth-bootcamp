@@ -2,13 +2,15 @@
 
 import { useLanguage } from "@/lib/LanguageContext";
 
+const TELEGRAM_LINK = "https://t.me/+kjeGKNd-5-JmYzBh";
+
 export default function Footer() {
   const { lang } = useLanguage();
 
   return (
     <footer className="bg-black border-t border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-3 gap-8 items-start">
+        <div className="grid md:grid-cols-4 gap-8 items-start">
           
           {/* Brand */}
           <div>
@@ -62,6 +64,26 @@ export default function Footer() {
             <p className="mt-3 text-sm text-gray-400">
               Mobile Apps • App Store • Google Play
             </p>
+          </div>
+
+          {/* Telegram */}
+          <div>
+            <h4 className="text-sm font-semibold text-white mb-3">
+              Telegram
+            </h4>
+            <p className="text-sm text-gray-400">
+              {lang === "en"
+                ? "Updates, announcements, and academy news"
+                : "Yangiliklar, e’lonlar va akademiya xabarlari"}
+            </p>
+            <a
+              href={TELEGRAM_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-2 text-sm text-blue-400 hover:text-blue-300 transition"
+            >
+              Join Telegram →
+            </a>
           </div>
         </div>
 
