@@ -13,19 +13,19 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold tracking-wide text-white">
-              InfiniTech
+              InfiniTech Startup Academy
             </h3>
             <p className="mt-3 text-sm text-gray-400 leading-relaxed">
               {lang === "en"
-                ? "A full-stack web & mobile coding bootcamp focused on real apps, real skills, and real income."
-                : "Haqiqiy ilovalar, real ko‘nikmalar va daromadga yo‘naltirilgan full-stack dasturlash bootcampi."}
+                ? "A startup-focused academy where students learn how to build, publish, and monetize real mobile apps."
+                : "Real mobil ilovalar yaratish, ularni App Store va Google Play’ga joylash hamda monetizatsiya qilishni o‘rgatuvchi startup akademiya."}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
             <h4 className="text-sm font-semibold text-white mb-3">
-              {lang === "en" ? "Program" : "Dastur"}
+              {lang === "en" ? "Academy" : "Akademiya"}
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
@@ -40,22 +40,27 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#apply" className="hover:text-white transition">
-                  {lang === "en" ? "Apply" : "Ariza"}
+                  {lang === "en" ? "Contact" : "Bog‘lanish"}
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Location / Trust */}
+          {/* Location */}
           <div>
             <h4 className="text-sm font-semibold text-white mb-3">
-              {lang === "en" ? "Location" : "Joylashuv"}
+              {lang === "en" ? "Location" : "Manzil"}
             </h4>
             <p className="text-sm text-gray-400">
-              Tashkent, Uzbekistan
+              IMPACT.T Technology Hub (Coworking)
             </p>
-            <p className="mt-2 text-sm text-gray-400">
-              Web • Mobile • Full-Stack
+            <p className="mt-1 text-sm text-gray-400">
+              {lang === "en"
+                ? "Bogiboston Street 186, Tashkent"
+                : "Bog‘iboston ko‘chasi 186, Toshkent"}
+            </p>
+            <p className="mt-3 text-sm text-gray-400">
+              Mobile Apps • App Store • Google Play
             </p>
           </div>
         </div>
@@ -63,10 +68,10 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <span>
-            © {new Date().getFullYear()} InfiniTech Coding Bootcamp
+            © {new Date().getFullYear()} InfiniTech Startup Academy
           </span>
           <span>
-            Build Apps • Get Hired • Earn Money
+            Build Mobile Apps • Launch • Monetize
           </span>
         </div>
       </div>

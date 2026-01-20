@@ -16,18 +16,21 @@ export default function Apply() {
       className="py-28 bg-gradient-to-b from-black to-gray-900 text-white"
     >
       <div className="max-w-4xl mx-auto px-6 text-center">
+        {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold">
           {lang === "en"
-            ? "Apply to InfiniTech"
-            : "InfiniTech ga ariza topshiring"}
+            ? "Contact InfiniTech"
+            : "InfiniTech bilan bog‘laning"}
         </h2>
 
+        {/* Description */}
         <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
           {lang === "en"
-            ? "Join our free intro workshop to see if InfiniTech is right for you."
-            : "Bepul tanishtiruv darsiga qo‘shiling va InfiniTech sizga mos kelishini bilib oling."}
+            ? "Have questions about the program or want to discuss your idea? Contact us and we’ll guide you on the next steps."
+            : "Dastur haqida savollaringiz bormi yoki g‘oyangizni muhokama qilmoqchimisiz? Biz bilan bog‘laning — keyingi qadamlar bo‘yicha yo‘l ko‘rsatamiz."}
         </p>
 
+        {/* CTA */}
         <div className="mt-10">
           <a
             href={FORM_LINKS[lang]}
@@ -36,15 +39,16 @@ export default function Apply() {
             className="inline-block bg-white text-black px-10 py-4 rounded-xl text-lg font-semibold hover:bg-gray-200 transition"
           >
             {lang === "en"
-              ? "Apply via Free Intro Workshop"
-              : "Bepul tanishtiruv darsi orqali ariza"}
+              ? "Contact Us"
+              : "Biz bilan bog‘laning"}
           </a>
         </div>
 
+        {/* Note */}
         <p className="mt-6 text-sm text-gray-400">
           {lang === "en"
-            ? "No payment required to apply."
-            : "Ariza topshirish uchun to‘lov talab qilinmaydi."}
+            ? "No payment required. This is an initial contact form."
+            : "Hech qanday to‘lov talab qilinmaydi. Bu dastlabki aloqa shakli."}
         </p>
       </div>
     </section>

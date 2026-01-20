@@ -4,42 +4,60 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 const roadmapContent = {
   en: {
-    title: "6-Month Learning Roadmap",
+    title: "6-Month Mobile App Launch Roadmap",
     months: [
-      { title: "Month 1", desc: "Programming fundamentals & JavaScript" },
-      { title: "Month 2", desc: "React & modern frontend development" },
-      { title: "Month 3", desc: "Backend with Node.js & Python" },
-      { title: "Month 4", desc: "Mobile apps with React Native & Expo" },
-      { title: "Month 5", desc: "App monetization & AdMob" },
-      { title: "Month 6", desc: "Career, freelancing & capstone project" },
+      {
+        title: "Month 1",
+        desc: "Programming fundamentals, JavaScript, and understanding how real mobile apps are planned and built.",
+      },
+      {
+        title: "Month 2",
+        desc: "Building user interfaces with React. Turning ideas into working app screens and flows.",
+      },
+      {
+        title: "Month 3",
+        desc: "Backend development with Node.js and Python. APIs, databases, and mobile app logic.",
+      },
+      {
+        title: "Month 4",
+        desc: "Mobile app development with React Native & Expo. Building Android and iOS apps from one codebase.",
+      },
+      {
+        title: "Month 5",
+        desc: "Publishing mobile apps to App Store & Google Play. Monetization with paid apps, subscriptions, and AdMob.",
+      },
+      {
+        title: "Month 6",
+        desc: "Launching, improving, and scaling your mobile app. Updates, analytics, and long-term app strategy.",
+      },
     ],
   },
   uz: {
-    title: "6 oylik o‘quv yo‘l xaritasi",
+    title: "6 oylik mobil ilova ishga tushirish yo‘l xaritasi",
     months: [
       {
         title: "1-oy",
-        desc: "Dasturlash asoslari va JavaScript",
+        desc: "Dasturlash asoslari, JavaScript va real mobil ilovalar qanday rejalashtirilishi va yaratilishini tushunish.",
       },
       {
         title: "2-oy",
-        desc: "React va zamonaviy frontend dasturlash",
+        desc: "React yordamida ilova interfeyslarini yaratish. G‘oyani ishlaydigan ilova ekranlariga aylantirish.",
       },
       {
         title: "3-oy",
-        desc: "Node.js va Python yordamida backend",
+        desc: "Node.js va Python bilan backend. API, ma’lumotlar bazasi va mobil ilova mantiqi.",
       },
       {
         title: "4-oy",
-        desc: "React Native va Expo bilan mobil ilovalar",
+        desc: "React Native va Expo yordamida Android va iOS mobil ilovalar yaratish.",
       },
       {
         title: "5-oy",
-        desc: "Ilovalarni monetizatsiya qilish va AdMob",
+        desc: "Mobil ilovalarni App Store va Google Play’ga joylash. Monetizatsiya: pullik ilovalar, obuna va AdMob.",
       },
       {
         title: "6-oy",
-        desc: "Karyera, frilanserlik va yakuniy loyiha",
+        desc: "Mobil ilovani ishga tushirish, yaxshilash va kengaytirish. Yangilanishlar va uzoq muddatli strategiya.",
       },
     ],
   },

@@ -4,26 +4,32 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 type Language = "en" | "uz";
 
+const DEFAULT_LANGUAGE: Language = "uz";
+
 const LanguageContext = createContext<{
   lang: Language;
   setLang: (lang: Language) => void;
 }>({
-  lang: "en",
+  lang: DEFAULT_LANGUAGE,
   setLang: () => {},
 });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Language>("en");
+  const [lang, setLang] = useState<Language>(DEFAULT_LANGUAGE);
   const [mounted, setMounted] = useState(false);
 
-  // Load saved language
+  // Load saved language or use default
   useEffect(() => {
     const saved = localStorage.getItem("lang") as Language | null;
-    if (saved) setLang(saved);
+    if (saved === "en" || saved === "uz") {
+      setLang(saved);
+    } else {
+      setLang(DEFAULT_LANGUAGE);
+    }
     setMounted(true);
   }, []);
 
-  // Save language
+  // Persist language
   useEffect(() => {
     if (mounted) {
       localStorage.setItem("lang", lang);
